@@ -2,11 +2,14 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-sample1',
-  standalone: true,
-  imports: [],
-  templateUrl: './sample1.component.html',
-  styleUrl: './sample1.component.css'
+  template: `
+    <p>Sample Component Loaded</p>
+  `,
+  styles: [`
+    p {
+      color: blue;
+    }
+  `],
+  standalone: true
 })
-export class Sample1Component {
-
-}
+export class Sample1Component { }
